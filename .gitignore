@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+#Ignoreing .gradle directory and everything in it
+.gradle/*
+#Ignoreing build directory and everything in it
+build/*
+#Ignoreing out directory and everything in it
+out/*
+#Ignoreing .idea directory and everything in it
+.idea/*

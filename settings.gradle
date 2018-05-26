@@ -1,2 +1,3 @@
 rootProject.name = 'gradle-tutorial'
+include 'GradleTest101'
 

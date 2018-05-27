@@ -1,0 +1,33 @@
+apply plugin: 'java'
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:18.0'
+}
+
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+}
+
+jar {
+    manifest {
+        attributes("Implementation-Title": "Respository-Check",
+                "Implementation-Version": 1.10)
+    }
+}
+
+task execute(type: JavaExec) {
+    main = 'TestRepository'
+    classpath = sourceSets.main.runtimeClasspath
+}

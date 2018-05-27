@@ -2,7 +2,15 @@ plugins {
     id 'java'
 }
 
-task execute(type: JavaExec){
+jar {
+    manifest {
+        attributes("Implementation-Title": "Gradle",
+                "Implementation-Version": 1.23)
+    }
+}
+
+
+task execute(type: JavaExec) {
 
     main = 'TestJavaClass'
     classpath = sourceSets.main.runtimeClasspath

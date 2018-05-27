@@ -1,0 +1,9 @@
+plugins {
+    id 'java'
+}
+
+task execute(type: JavaExec){
+
+    main = 'TestJavaClass'
+    classpath = sourceSets.main.runtimeClasspath
+}
